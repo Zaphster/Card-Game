@@ -1,7 +1,11 @@
-player1BaseSpaceId = 6
-player2BaseSpaceId = 39
-
-Connections = [
+{
+name:"Default Field",
+numberOfHexagons: 46,
+hexagonsPerRow:[4, 5, 6, 5, 6, 5, 6, 5, 4],
+justification:"center",
+player1BaseLocation: 6,
+player2BaseLocation: 39,
+connections: [
 {0:[1, 4, 5]},
 {1:[0, 2, 5, 6]},
 {2:[1, 3, 6, 7]},
@@ -48,7 +52,8 @@ Connections = [
 {43:[42, 38, 39, 44]},
 {44:[43, 39, 40, 45]},
 {45:[40, 41, 44]}
-];
+]
+}
 
 //layout
 //
