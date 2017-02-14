@@ -9,6 +9,7 @@ public class Field{
   private int player1BaseLocation;
   private int player2BaseLocation;
   private HexLink[] hexLinks;
+  private MovementType[] validMovementTypes;
   
   //each hexLink needs to hold the origin and all destinations along with all allowed movement types for that destination
   public class hexLink{
@@ -24,30 +25,33 @@ public class Field{
     }
   }
   
-  private static Boolean isValidHex(int hex){
-    Boolean isValidHex = false;
-    
-    return isValidHex;
+  public int getNumberOfHexagons(){
+    return this.numberOfHexagons;
   }
   
-  private static Boolean isValidMovementType(MovementType movementType){
+  private static Boolean isValidHex(Field field, int hex){
+    //0 based indexing
+    return hex >=0 && hex < field.getNumberOfHexagons() - 1;
+  }
+  
+  private static Boolean isValidMovementType(Field field, MovementType movementType){
     Boolean isValid = false;
     
     return isValid;
   }
   
-  public static void setMovementPermissions_oneWay(int fromHex, int toHex, MovementType movementType) throws invalidHexException, invalidMovementTypeException{
-    if(!isValidHex(fromHex) || !isValidHex(toHex)){
+  public static void setMovementPermissions_oneWay(Field field, int fromHex, int toHex, MovementType movementType) throws invalidHexException, invalidMovementTypeException{
+    if(!isValidHex(field, fromHex) || !isValidHex(field, toHex)){
       throw new invalidHexException();
     }
-    if(!isValidMovementType(movementType)){
+    if(!isValidMovementType(field, movementType)){
       throw new invalidMovementTypeException();
     }
   }
   
-  public static void setMovementPermissions_roundTrip(int fromHex, int toHex, MovementType movementType){
-    setMovementPermissions_oneWay(fromHex, toHex, movementType);
-    setMovementPermissions_oneWay(toHex, fromHex, movementType);
+  public static void setMovementPermissions_roundTrip(Field field, int fromHex, int toHex, MovementType movementType){
+    setMovementPermissions_oneWay(field, fromHex, toHex, movementType);
+    setMovementPermissions_oneWay(field, toHex, fromHex, movementType);
   }
 
 
