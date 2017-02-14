@@ -1,0 +1,54 @@
+public class Field{
+  private String name;
+  private int numberOfHexagons;
+  private int[] hexagonsPerRow;
+  private int mostHexagonsInSingleRow;
+  private int numberOfRows;
+  private int[] startPositionByRow:
+  private Justification justification:
+  private int player1BaseLocation;
+  private int player2BaseLocation;
+  private HexLink[] hexLinks;
+  
+  //each hexLink needs to hold the origin and all destinations along with all allowed movement types for that destination
+  public class hexLink{
+    private int origin;
+    private int[] destination;
+    private MovementType[][] allowedMovementType;
+  }
+
+
+  public class FieldBuilder{
+    public FieldBuilder(FieldDetails fieldDetails){
+    
+    }
+  }
+  
+  private static Boolean isValidHex(int hex){
+    Boolean isValidHex = false;
+    
+    return isValidHex;
+  }
+  
+  private static Boolean isValidMovementType(MovementType movementType){
+    Boolean isValid = false;
+    
+    return isValid;
+  }
+  
+  public static void setMovementPermissions_oneWay(int fromHex, int toHex, MovementType movementType) throws invalidHexException, invalidMovementTypeException{
+    if(!isValidHex(fromHex) || !isValidHex(toHex)){
+      throw new invalidHexException();
+    }
+    if(!isValidMovementType(movementType)){
+      throw new invalidMovementTypeException();
+    }
+  }
+  
+  public static void setMovementPermissions_roundTrip(int fromHex, int toHex, MovementType movementType){
+    setMovementPermissions_oneWay(fromHex, toHex, movementType);
+    setMovementPermissions_oneWay(toHex, fromHex, movementType);
+  }
+
+
+}
