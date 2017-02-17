@@ -1,0 +1,76 @@
+to play - two players must each have a deck.  a field must be chosen.
+
+valid deck: 45 cards.  no augment violations
+  one player "card" chosen. it does not count towards the card count.
+
+what constitutes an augment violation?
+  basic augments with no game breaking abilities should not have any augment violations
+    for instance, basic stats.  any amount of creatures with a 2/2 augment should be allowed.
+  advanced augments may have limitations
+    for instance, a card that speeds up satellite orbit speeds may only have 3 allowed in the deck
+  I believe the most i'll limit any augment to is 3 copies in a deck.
+  Some augments may be limited, but not as limited as the 3.
+  Maybe that could be indicated by 'rarity'? the most rare augments are the most limited, and on down
+  rarity should indicate how often they will show up in your deck. NOT how often you obtain them.
+  
+Player cards:
+  determine things like
+    base health
+    mana gains (colors, amounts per turn)
+    base placement (maybe)
+    hero power (catch up mechanic? auto triggered ability? activated ability with cooldown?)
+  Each may have one augment slot.  (maybe more? maybe that is something that can be adjusted? probably not adjustable)
+  
+Regular cards:
+  types:
+    Minion
+      cost
+      health
+      attack
+      abilities
+      movement type
+        walk on ground
+        fly
+        burrow?
+        teleport?
+    Satellite
+      cost
+      period (can only be used when in the correct location, a.k.a. above the field, during its 'orbit')
+      health
+      ability
+        auto
+        on use
+    tech
+      cost
+      ability
+all cards are created by users
+  start with base card:
+    minion
+    satellite
+    tech
+  each base card has a number of augment slots
+  these augment slots are filled by an augment of the appropriate type
+  this creates the final card
+augment slot:
+  has a color
+  has two or more colors?
+augment:
+  has a color.  when being put into an augment slot, it must match the color of the augment slot
+  has two or more colors?
+Colors:
+  Grey/Steel: Satellite class
+  Red: Mine/Trap class
+  Green: Minion specialty class?
+  Blue: Zone manipulation class
+Mine/Traps:
+  triggered by any player's minions!
+  only seen by player who placed it
+Zone Manipulation:
+  zone effects placed on spaces
+  affects any player's minions!
+Spaces:
+  Destructible
+  Creatable? maybe
+  Flying, teleporting can go over spaces that are destroyed
+  
+    
