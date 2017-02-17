@@ -15,7 +15,8 @@ public class Field{
   public class hexLink{
     private int origin;
     private int[] destination;
-    private MovementType[][] allowedMovementType;
+    private MovementType[/*destination id*/][/*allowed movement types to that destination*/] allowedMovementType;
+    //TODO: figure out how to convert the destination id into the proper index for the allowed movement types
   }
 
 
@@ -31,7 +32,7 @@ public class Field{
   
   private static Boolean isValidHex(Field field, int hex){
     //0 based indexing
-    return hex >=0 && hex < field.getNumberOfHexagons() - 1;
+    return field != null && hex >=0 && hex < field.getNumberOfHexagons() - 1;
   }
   
   private static Boolean isValidMovementType(Field field, MovementType movementType){
