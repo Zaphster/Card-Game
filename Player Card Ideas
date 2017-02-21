@@ -2,23 +2,39 @@ Grey/Steel: Satellite
 Red: Mines/Traps
 Green: Minion Based
 Blue: Zone Based
+White: shared! can be played by any mana color...?
 
 4 only one color characters
-  Grey
-  Red
-  Green
-  Blue
+  Grey - mana: 2 grey
+    Overseer
+  Red - mana: 2 red
+    Minelayer
+  Green - mana: 2 green
+    Commander
+  Blue - mana: 2 blue
+    
 6 double color characters
-  Grey/Red
-  Grey/Green
-  Grey/Blue
-  Red/Green
-  Red/Blue
-  Green/Blue
+  Grey/Red - mana: grey red
+  Grey/Green - mana: grey green
+  Grey/Blue - mana: grey blue
+  Red/Green - mana: red green
+  Red/Blue - mana: red blue
+  Green/Blue - mana: green blue
 4 triple color characters
-  Grey/Red/Green
-  Grey/Red/Blue
-  Grey/Green/Blue
-  Red/Green/Blue
+  customizable mana order???
+  Grey/Red/Green - mana: green grey red
+  Grey/Red/Blue - mana: red blue grey
+  Grey/Green/Blue - mana: grey green blue
+  Red/Green/Blue - mana: blue red green
 1 all color characters
-  Grey/Red/Green/Blue
+  customizable mana order???
+  Grey/Red/Green/Blue - mana: grey green red blue
+  
+  
+
+Player ability ideas:
+  push all units 3 spaces away
+  destroy all units within 1 spaces of base
+  immediately activate all of the owner's satellites
+  immediately activate all of the owner's traps
+  
