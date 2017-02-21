@@ -1,0 +1,24 @@
+Grey/Steel: Satellite
+Red: Mines/Traps
+Green: Minion Based
+Blue: Zone Based
+
+4 only one color characters
+  Grey
+  Red
+  Green
+  Blue
+6 double color characters
+  Grey/Red
+  Grey/Green
+  Grey/Blue
+  Red/Green
+  Red/Blue
+  Green/Blue
+4 triple color characters
+  Grey/Red/Green
+  Grey/Red/Blue
+  Grey/Green/Blue
+  Red/Green/Blue
+1 all color characters
+  Grey/Red/Green/Blue
