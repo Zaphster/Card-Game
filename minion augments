@@ -17,7 +17,7 @@ green
   passive ability: has +1/+1 for each neighboring friendly minion - cost 4 green, stackable
   passive ability: has +0/+1 for each neighboring enemy minion - cost 3 green, stackable
   triggered ability {trigger: entering battlefield, effect: summon a friendly 1/1 minion on all empty adjacent zones} - cost 6 green, unique
-  
+  activated ability {cost: sacrifice this minion, effect: summon two copies of this minion with empty action points at sacrifice location and one location adjacent, picked by user} - cost 3 green, unique
 red
   activated ability {cost: sacrifice this minion, effect: deal damage equal to its attack to all minions in surrounding zones} - cost 1 red, unique
   activated ability {cost: 1 action point, effect: lay a mine that deals 2 damage to any ground minion that steps on it} - cost 1 red, stackable. stacking increases damage and augment cost.
