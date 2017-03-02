@@ -4,23 +4,28 @@ white
   +1/+0 - cost 1 any, stackable
   1 action point - cost 0 any, unique
   2 action points - cost 2 any, unique
+  flying: ignores mines, spaces with no ground, and zone effects - cost 2 any, unique
 blue
-  passive ability: cannot move. Attack Range +1. Auto attack enemies that move into zones it can fire into. Auto attack damage is 1. - cost 2 blue, stackable. stacking increases damage and augment cost.
-  activated abilty {cost: sacrifice this minion, effect: create a healing aura that heals any minion on target zone at the end of each turn, heal amount: 2} - cost 2 blue, stackable. stacking increases heal amount and augment cost.
-  
+  passive ability: cannot move. Attack Range +1. Auto attack enemies that move into spaces it can fire into. Auto attack damage is 1. - cost 2 blue, stackable. stacking increases damage and augment cost.
+  activated ability: {cost: sacrifice this minion, effect: create a healing aura that heals any minion on target space at the end of each turn, heal amount: 2, duration: indefinite} - cost 2 blue, stackable. stacking increases heal amount and augment cost.
+  activated ability: {cost: one action point, effect: create a zone of invulnerability on target space. Any minion in the zone of invulnerability will not take damage., duration: 2 turns} - cost 1 blue, unique
+  activated ability: {cost: one action point, effect: deal 3 damage to two adjacent spaces, each space must be adjacent to the minion as well} - cost 5 blue, stackable. stacking increases damage and cost.
 grey
-  triggered ability {trigger: friendly satellite ability is activated, effect: gain +1/+0} - cost 2 grey, stackable
-  triggered ability {trigger: entering battlefield, effect: reduce the period of all your satellites by 1 (they cannot be reduced below 1)} - cost 3 grey, unique
-  triggered ability {trigger: entering battlefield, effect: summon {summoned thing: satellite {period:3, activated ability:summon a 2/3 minion adjacent to your base}}} - cost 4 grey, unique
+  triggered ability: {trigger: friendly satellite ability is activated, effect: gain +1/+0} - cost 2 grey, stackable
+  triggered ability: {trigger: entering battlefield, effect: reduce the period of all your satellites by 1 (they cannot be reduced below 1)} - cost 3 grey, unique
+  triggered ability: {trigger: entering battlefield, effect: summon {summoned thing: satellite {period:3, activated ability:summon a 2/3 minion adjacent to your base}}} - cost 4 grey, unique
   
 green
   passive ability: has +1/+1 for each neighboring friendly minion - cost 4 green, stackable
-  passive ability: has +0/+1 for each neighboring enemy minion - cost 3 green, stackable
-  triggered ability {trigger: entering battlefield, effect: summon a friendly 1/1 minion on all empty adjacent zones} - cost 6 green, unique
-  activated ability {cost: sacrifice this minion, effect: summon two copies of this minion with empty action points at sacrifice location and one location adjacent, picked by user} - cost 3 green, unique
+  passive ability: {name: Occupy, ability: After killing a minion, move to the killed minion's location} - cost 1 green, unique
+  passive ability: {name: Sniper, ability: Attack range +1} - cost 2 green, stackable
+  passive ability: {name: Defender, ability: has +0/+1 for each neighboring enemy minion} - cost 3 green, stackable
+  triggered ability: {trigger: entering battlefield, effect: summon a friendly 1/1 minion on all empty adjacent zones} - cost 6 green, unique
+  activated ability: {cost: [sacrifice this minion, one action point], effect: summon two copies of this minion with empty action points at sacrifice location and one location adjacent, picked by user} - cost 3 green, unique
 red
-  activated ability {cost: sacrifice this minion, effect: deal damage equal to its attack to all minions in surrounding zones} - cost 1 red, unique
-  activated ability {cost: 1 action point, effect: lay a mine that deals 2 damage to any ground minion that steps on it} - cost 1 red, stackable. stacking increases damage and augment cost.
-  activated ability {cost: 1 action point, effect: lay a mine that deals 1 damage to any ground minions in an area 1 space around the mine when a ground minion steps on it} - cost 2 red, stackable. stacking increases damage and augment cost.
-  triggered ability {trigger: a friendly mine goes off, effect: draw a card} - cost 3 red, unique
+  activated ability: {cost: sacrifice this minion, effect: deal damage equal to its attack to all minions in surrounding zones} - cost 1 red, unique
+  activated ability: {cost: 1 action point, effect: lay a mine that deals 2 damage to any ground minion that steps on it} - cost 1 red, stackable. stacking increases damage and augment cost.
+  activated ability: {cost: 1 action point, effect: lay a mine that deals 1 damage to any ground minions in an area 1 space around the mine and on the square the mine is located when a ground minion steps on it} - cost 2 red, stackable. stacking increases damage and augment cost.
+  triggered ability: {trigger: a friendly mine goes off, effect: draw a card} - cost 3 red, unique
+  activated ability: {cost: 1 action point, effect: trigger all mines surrounding this minion} - cost 2 red, unique
   
