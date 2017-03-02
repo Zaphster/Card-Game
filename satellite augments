@@ -1,4 +1,0 @@
-period:5, passive ability: if this satellite orbits 5 times, you win the game - cost 7 grey, unique
-period:1, activated ability: heal a minion for 1 health, cost 2 grey, stackable. stacking increases heal amount and cost
-period:3, triggered ability: {trigger: complete one orbit, effect: draw a card} - cost 5 grey, stackable. stacking increases cost and card draw
-period:4, triggered ability: {trigger: play satellite, effect: discard a minion card from hand, imprint that minion on this satellite}, activated ability: summon the imprinted minion - cost 9 grey, unique

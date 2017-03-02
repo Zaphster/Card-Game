@@ -1,0 +1,15 @@
+white
+  destroy a satellite that is in range - cost 5 any
+  reveal all mines - cost 3 any
+blue
+  create zone: {any minion who enters this space is transported to the target exit location.  Exit location must not be occupied by a minion. (Must not allow infinite loops!!!)}
+  
+grey
+  create satellite: {period:5, passive ability: if this satellite orbits 5 times, you win the game} - cost 7 grey, unique
+  create satellite: {period:1, activated ability: heal a minion for 1 health} - cost 2 grey, stackable. stacking increases heal amount and cost
+  create satellite: {period:3, triggered ability: {trigger: complete one orbit, effect: draw a card}} - cost 5 grey, stackable. stacking increases cost and card draw
+  create satellite: {period:4, triggered ability: {trigger: play satellite, effect: discard a minion card from hand, imprint that minion on this satellite}, activated ability: summon the imprinted minion} - cost 9 grey, unique
+red
+  lay mine: {}
+green
+  swap: switch the position of two minions (friendly or enemy)
