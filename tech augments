@@ -4,7 +4,7 @@ white
   reveal all mines - cost 3 any
 blue
   create zone: {any minion who enters this space is transported to the target exit location.  Exit location must not be occupied by a minion. (Must not allow infinite loops!!!)}
-  
+  disable: targeted minion loses all action points for the next turn - cost 4 blue
 grey
   create satellite: {period:5, passive ability: if this satellite orbits 5 times, you win the game} - cost 7 grey, unique
   create satellite: {period:1, activated ability: heal a minion for 1 health} - cost 2 grey, stackable. stacking increases heal amount and cost
