@@ -1,11 +1,12 @@
 white
-  destroy a satellite that is in range - cost 5 any
-  increase the orbit times of all satellites by 1 - cost 2 any
-  reveal all mines - cost 3 any
+  destroy a satellite or minion - cost 9 any
+  reveal all mines - cost 6 any
+  Purify - destroy everything on one space - 13 any
 blue
   create zone: {any minion who enters this space is transported to the target exit location.  Exit location must not be occupied by a minion. (Must not allow infinite loops!!!)}
   disable: targeted minion loses all action points for the next turn - cost 4 blue
 grey
+  increase the orbit times of all satellites by 1 - cost 2 grey
   create satellite: {period:5, passive ability: if this satellite orbits 5 times, you win the game} - cost 7 grey, unique
   create satellite: {period:1, activated ability: heal a minion for 1 health} - cost 2 grey, stackable. stacking increases heal amount and cost
   create satellite: {period:3, triggered ability: {trigger: complete one orbit, effect: draw a card}} - cost 5 grey, stackable. stacking increases cost and card draw
