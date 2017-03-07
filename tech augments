@@ -1,17 +1,26 @@
 white
-  destroy a satellite or minion - cost 9 any
-  reveal all mines - cost 6 any
-  Purify - destroy everything on one space - 13 any
+  destroy a minion - cost 9 any, unique
+  Purify - destroy everything on one space (minions, mines, zone effects, etc...) - 13 any, unique
 blue
-  create zone: {any minion who enters this space is transported to the target exit location.  Exit location must not be occupied by a minion. (Must not allow infinite loops!!!)}
-  disable: targeted minion loses all action points for the next turn - cost 4 blue
+  create zone: {name: Teleport, effect: any minion who enters this space is transported to the target exit location.  Exit location must not be occupied by a minion. (Must not allow infinite loops!!!)} - cost 5 blue, unique
+  disable: targeted minion loses all action points for the next turn - cost 4 blue, stackable. stacking increases the cost and the number of targets you can choose
+  destroy space (and everything on it) - cost 10 blue, stackable. stacking increases cost and the number of targets you can choose.
+  create space (creatable space locations: any space that was previously destroyed.  two layers of spaces around the default field.) - cost 4 blue, stackable. stacking increases cost and number of targets you can choose.
 grey
-  increase the orbit times of all satellites by 1 - cost 2 grey
+  increase the orbit times of all satellites by 1 - cost 2 grey, stackable
+  destroy satellite - cost 7 grey, stackable
   create satellite: {period:5, passive ability: if this satellite orbits 5 times, you win the game} - cost 7 grey, unique
   create satellite: {period:1, activated ability: heal a minion for 1 health} - cost 2 grey, stackable. stacking increases heal amount and cost
   create satellite: {period:3, triggered ability: {trigger: complete one orbit, effect: draw a card}} - cost 5 grey, stackable. stacking increases cost and card draw
   create satellite: {period:4, triggered ability: {trigger: play satellite, effect: discard a minion card from hand, imprint that minion on this satellite}, activated ability: summon the imprinted minion} - cost 9 grey, unique
+  trigger all friendly satellite effects - cost 9 grey, stackable
 red
-  lay mine: {}
+  lay mine: {trigger: ground minion enters space, effect: destroy the minion on this space} - cost 6, stackable.  stacking increases cost and the number of spaces that can be targeted to have a mine put on it.
+  trigger all mines - cost 6 red, unique
+  lay mine: {trigger: ground minion enters space, effect: deal 1 damage to the minion on this space, replicate self on all spaces surrounding this space} - cost 5 red, stackable. stacking increases cost and damage.
 green
-  swap: switch the position of two minions (friendly or enemy)
+  swap: switch the position of two minions (friendly or enemy) - cost 4 green, unique
+  solitary soldier: give a minion +1/+1 for each empty space around it - cost 7 green, stackable
+  spoils of war: for the rest of the turn, draw a card when an enemy minion dies - cost 8 green, unique
+  
+  
