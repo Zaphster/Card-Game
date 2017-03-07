@@ -12,8 +12,8 @@ grey
   create satellite: {period:5, passive ability: if this satellite orbits 5 times, you win the game} - cost 7 grey, unique
   create satellite: {period:1, activated ability: heal a minion for 1 health} - cost 2 grey, stackable. stacking increases heal amount and cost
   create satellite: {period:3, triggered ability: {trigger: complete one orbit, effect: draw a card}} - cost 5 grey, stackable. stacking increases cost and card draw
-  create satellite: {period:4, triggered ability: {trigger: play satellite, effect: discard a minion card from hand, imprint that minion on this satellite}, activated ability: summon the imprinted minion} - cost 9 grey, unique
   trigger all friendly satellite effects - cost 9 grey, stackable
+  create satellite: {period:4, triggered ability: {trigger: play satellite, effect: discard a tech card from hand, imprint that tech card on this satellite}, activated ability: use the imprinted tech card} - cost 9 grey, unique
 red
   lay mine: {trigger: ground minion enters space, effect: destroy the minion on this space} - cost 6, stackable.  stacking increases cost and the number of spaces that can be targeted to have a mine put on it.
   trigger all mines - cost 6 red, unique
@@ -22,5 +22,24 @@ green
   swap: switch the position of two minions (friendly or enemy) - cost 4 green, unique
   solitary soldier: give a minion +1/+1 for each empty space around it - cost 7 green, stackable
   spoils of war: for the rest of the turn, draw a card when an enemy minion dies - cost 8 green, unique
+blue grey
   
-  
+blue red
+
+blue green
+
+grey red
+
+grey green
+  create satellite: {period:4, triggered ability: {trigger: play satellite, effect: discard a minion card from hand, imprint that minion on this satellite}, activated ability: summon the imprinted minion} - cost 5 grey, 4 green (and the imprinted minion), unique
+red green
+
+blue grey red
+
+blue grey green
+
+blue red green
+
+grey red green
+
+blue grey red green
