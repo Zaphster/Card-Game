@@ -17,7 +17,7 @@ grey
 red
   lay mine: {trigger: ground minion enters space, effect: destroy the minion on this space} - cost 6, stackable.  stacking increases cost and the number of spaces that can be targeted to have a mine put on it.
   trigger all mines - cost 6 red, unique
-  lay mine: {trigger: ground minion enters space, effect: deal 1 damage to the minion on this space, replicate self on all spaces surrounding this space} - cost 5 red, stackable. stacking increases cost and damage.
+  lay mine: {trigger: ground minion enters space, effect: deal 1 damage to the minion on this space, replicate self on all spaces surrounding this space.  Replicas do not replicate themselves.} - cost 5 red, stackable. stacking increases cost and damage.
 green
   swap: switch the position of two minions (friendly or enemy) - cost 4 green, unique
   solitary soldier: give a minion +1/+1 for each empty space around it - cost 7 green, stackable
