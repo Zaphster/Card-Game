@@ -1,6 +1,6 @@
 white
   destroy a minion - cost 9 any, unique
-  Purify - destroy everything on one space (minions, mines, zone effects, etc...) - 13 any, unique
+  Purify - destroy everything on one space (besides a Player)(minions, mines, zone effects, etc...) - 13 any, unique
 blue
   create zone: {name: Teleport, effect: any minion who enters this space is transported to the target exit location.  Exit location must not be occupied by a minion. (Must not allow infinite loops!!!)} - cost 5 blue, unique
   disable: targeted minion loses all action points for the next turn - cost 4 blue, stackable. stacking increases the cost and the number of targets you can choose
