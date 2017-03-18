@@ -45,7 +45,7 @@ White: shared! can be played by any mana color...?
 
 Player ability ideas:
   push all units 3 spaces away
-  destroy all units within 1 spaces of base
+  destroy all units within 1 spaces of Player
   immediately activate all of the owner's satellites
   immediately activate all of the owner's traps
   
