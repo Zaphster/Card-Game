@@ -28,4 +28,5 @@ red
   activated ability: {cost: 1 action point, effect: lay a mine that deals 1 damage to any ground minions in an area 1 space around the mine and on the square the mine is located when a ground minion steps on it} - cost 2 red, stackable. stacking increases damage and augment cost.
   triggered ability: {trigger: a friendly mine goes off, effect: draw a card} - cost 3 red, unique
   activated ability: {cost: 1 action point, effect: trigger all mines surrounding this minion} - cost 2 red, unique
-  
+  lightfeet: does not trigger mines - cost 1, unique
+  heavyfeet: triggers mines from one square away (in addition to if stepping directly on a mine) - cost (-1), unique
